@@ -100,7 +100,7 @@ body {
 #technologies h3, .proj-descriptors {
     color: #036477;
 }
-#portfolio {
+#portfolio, #contact {
     padding: 100px 0px;
     margin: 15px 0px;
 }
