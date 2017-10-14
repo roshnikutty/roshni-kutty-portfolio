@@ -77,18 +77,20 @@ body {
 }
 .hero {
     max-width:100%;
+    width: 100%;
+    position: relative;
+    margin-top: 75px;
 }
 
-/*.page-section{
-    padding: 100px 0px;
+.page-section{
+    padding: 30px 0px;
     margin: 15px 0px;
-}*/
-#intro, #contact, #me{
+}
+#contact, #me{
     font-size: 1.25em;
   }
-
-.intro-second-line{
-    text-align: left;
+#intro {
+    font-size: 1.5em;
 }
 #technologies h3 {
     padding: 0 20px;
@@ -131,14 +133,14 @@ body {
  #contact, #me{
       margin: auto;
   }
-  #intro {
+  /*#intro {
       margin: 40px auto auto auto;
       padding-top: 30px;
-  }
-  .intro {
+  }*/
+  /*.intro {
     position: relative;
-    width: 100%; /* for IE 6 */
- }
+    width: 100%; /* for IE 6 
+ }*/
 
 .contact-list{
     list-style: none;
@@ -276,22 +278,20 @@ span{
 
 @media (min-width: 1030px) {
     /* getting intro text in hero image on screen sizes above 1030px */
-    .intro>.intro-first-line {
+    .intro-first-line, .intro-second-line {
             position: absolute;
-            top: 10px;
-            opacity: 0.6;
-            letter-spacing: -1px;
             padding: 10px;
-            line-height: 90%;
-            left: 16px;
+            left: 42px;
+            color: white;
+            background-color: transparent;
+            text-shadow: 2px 2px 4px #000000;
+    }
+    .intro-first-line {
+            top: 160px;
+            margin-bottom: 7px;
     }
     .intro-second-line {
-            position: absolute;
-            top: 53px;
-            opacity: 0.6;
-            letter-spacing: -1px;
-            padding: 10px;
-            line-height: 90%;
+            top: 200px;
     }
     .contact-list li{
             font-size: 0.9em;
@@ -302,9 +302,6 @@ span{
     /* having intro text, both sentences show without line break */
     br { 
         content: ' '; 
-    }
-    span.intro-first-line, span.intro-second-line {
-        font-size: 0.9em;
     }
     .contact-list span{
         display: none;
@@ -374,9 +371,9 @@ span{
     ul.right_corner{
         margin: auto;
     }
-    #intro {
+    /*#intro {
         padding-top: 100px;
-    }
+    }*/
 
 
 }
@@ -394,7 +391,7 @@ span{
         width: 100%;
         margin: 0;
     }
-     #intro {
+     /*#intro {
         padding-top: 200px;
-    }
+    }*/
 }
