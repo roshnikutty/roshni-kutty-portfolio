@@ -36,7 +36,6 @@ a:hover{
     /*margin: 0;*/
     list-style: none;
     font-family: 'Titillium Web', sans-serif;
-    float: right;
     -webkit-margin-after: 0;
 }
 
@@ -264,7 +263,6 @@ span{
         opacity: 0.5;
         padding: 0 10px 0 10px;
 }
-
 /* Media queries */
 @media (min-width: 1200px) {
 
@@ -286,7 +284,6 @@ span{
     /* getting intro text in hero image on screen sizes above 1030px */
     .intro-first-line, .intro-second-line {
             position: absolute;
-            padding: 10px;
             left: 42px;
             color: white;
             background-color: transparent;
@@ -341,11 +338,20 @@ span{
         order: 2;
     }*/
 }
-
-@media (max-width:700px) {
+@media (min-width: 590px) {
+       .right_corner {
+          float: right;
+       }
+}
+@media (max-width:590px) {
+    .right_corner {
+        display: block;
+        margin: auto;
+        padding-left:0;
+    }
+    
     li.light_button, li.dark_button {
-        max-width: 100%;
-        height: 15%;
+        width: 100%;
         text-align: center;
     }
     .js-more-button:hover, .js-scroll-top:hover {
@@ -358,46 +364,14 @@ span{
         background-color:black;
         color: #cfd8dc;
     }
-}
-
-@media (max-width:600px){
-    /*header>nav{
-        flex-wrap: wrap;
-        flex: 1;
-        justify-content: space-between;
-    }*/
-    /* centering flex element */
-    nav.col-xs-12{
-        align-items: center;
-        justify-content: center
+    .header_bar {
+        padding-left: 0;
+        padding-right: 0;
     }
-}
-
-@media (max-width:539px){
-    ul.right_corner{
-        margin: auto;
+    .js-header {
+        text-align: center;
     }
-    /*#intro {
-        padding-top: 100px;
-    }*/
-
-
-}
-
-@media (max-width:385px) {
-    .header_bar, nav, nav>a, ul>a {
-        display: block;
+    .hero{
+        margin-top: 209px;
     }
-    ul.right_corner {
-        padding-left: 0px;
-        width: 100%;
-        margin: 14px;
-    }
-    li.light_button, li.dark_button {
-        width: 100%;
-        margin: 0;
-    }
-     /*#intro {
-        padding-top: 200px;
-    }*/
 }
