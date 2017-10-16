@@ -197,7 +197,7 @@ span {
     z-index: 5;
 }
 .line-style {
-    width: 60%;
+    /*width: 60%;*/
     margin: 10 auto;
     border: 0; 
     height: 1px; 
