@@ -1,5 +1,5 @@
 # Roshni Kutty
-
+Portfolio using custom CSS grids
 
 ## Front-end technologies
 React, Redux, Javascript-ES6, HTML5, CSS3, jQuery, Enzyme (testing)
