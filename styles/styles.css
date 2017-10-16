@@ -322,7 +322,7 @@ span {
     }
     .view-code {
         display: block;
-        width: 88.4062px;
+        width: 50px;
     }
 
 }
@@ -382,6 +382,12 @@ span {
     }
     .hero{
         margin-top: 186px;
+    }
+    .roshni {
+        margin-top: 175px;
+    }
+    .section-title {
+        margin-top: 105px;
     }
 }
 @media (min-width: 412px) {
