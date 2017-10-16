@@ -3,24 +3,18 @@
     font-family: 'Quicksand', sans-serif;
     color: #212529;
 }
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
 /* HEADER STYLES */
-/*.header_bar {
-  display: flex;
-}*/
 
 .header_bar > nav {
   padding: 10px 0;
-  /*display: flex;
-  justify-content: space-between;
-  /*flex: 1;*/
   align-items: center;
 }
 
@@ -29,17 +23,19 @@ a:hover{
     padding: 15px;
     margin: 0;
     position: relative;
-
 }
 
 .right_corner {
-    /*margin: 0;*/
     list-style: none;
     font-family: 'Titillium Web', sans-serif;
     -webkit-margin-after: 0;
 }
 
-.light_button, .dark_button, .js-more-button, .js-scroll-top, .view-code {
+.light_button, 
+.dark_button, 
+.js-more-button, 
+.js-scroll-top, 
+.view-code {
     padding: 10px;
     margin-right: 30px;
     display: inline-block;
@@ -57,7 +53,11 @@ a:hover{
     background-color: #063b67;
     color: #ffffff;
 }
-.light_button:hover, .dark_button:hover, .js-more-button:hover, .js-scroll-top:hover, .view-code:hover {
+.light_button:hover, 
+.dark_button:hover, 
+.js-more-button:hover, 
+.js-scroll-top:hover, 
+.view-code:hover {
     cursor: pointer;
     outline: 2px solid #063b67;
     color:#063b67;
@@ -70,10 +70,10 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
-.container, .main-container{
+.container, .main-container {
     margin: auto;
 }
-.main-container{
+.main-container {
     margin-top: 15px;
 }
 .hero {
@@ -83,11 +83,11 @@ body {
     margin-top: 75px;
 }
 
-.page-section{
+.page-section {
     padding: 30px 0px;
     margin: 15px 0px;
 }
-#contact, #me{
+#contact, #me {
     font-size: 1.25em;
   }
 #intro {
@@ -106,18 +106,18 @@ body {
 .proj-descriptors {
     font-size: 20px;
 }
-.portfolio-img{
+.portfolio-img {
     width: 100%;
     height: auto;
 }
 .centering-container {
     text-align: center;
 }
-.portfolio-des, .portfolio-img{
+.portfolio-des, .portfolio-img {
     margin: 30px 0px;
 }
 
-.title{
+.title {
     font-family: 'Titillium Web', sans-serif;
     font-size: 1.5em;
 }
@@ -135,7 +135,7 @@ body {
     display: flex;
 }*/
 
- #contact, #me{
+ #contact, #me {
       margin: auto;
   }
   /*#intro {
@@ -147,14 +147,18 @@ body {
     width: 100%; /* for IE 6 
  }*/
 
-.contact-list{
+.contact-list {
     list-style: none;
     padding-left: 0;
 }
-.contact-list li{
+.contact-list li {
     display: inline-block;
 }
-
+.contact-list .icon, 
+.contact-list .text-contact,
+.contact-list .punc {
+    vertical-align: middle;
+}
 .icon {
     margin: 0 5px;
 }
@@ -163,31 +167,33 @@ body {
     display: none;
 }
 
-.more-section{
+.more-section {
     margin-top: 40px;
 }
 
-span{
+span {
     font-size: 1.3em;
 }
 
-.js-more-button, .js-scroll-top{
+.js-more-button, .js-scroll-top {
     border: none;
     margin-right: 0px;
     float: right;
 }
-.js-more-button:focus, .js-scroll-top:focus{
+.js-more-button:focus, 
+.js-scroll-top:focus {
     outline: 0;
 }
-.credits{
+.credits {
     color: #212529;
     font-size: 0.99em;
+}
+.js-header {
+        width: 100%;
 }
 .showOnScroll {
     position: fixed;
     top:0;
-    left:1px;
-    right:5px;
     z-index: 5;
 }
 .line-style {
@@ -255,13 +261,13 @@ span{
 /*.flex-container {
     justify-content: center;
 }*/
-.roshni{
-    width: auto;
-    height: auto;
-}
 .punc {
         opacity: 0.5;
         padding: 0 10px 0 10px;
+}
+.space {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 /* Media queries */
 @media (min-width: 1200px) {
@@ -279,7 +285,6 @@ span{
     }
 
 }
-
 @media (min-width: 1030px) {
     /* getting intro text in hero image on screen sizes above 1030px */
     .intro-first-line, .intro-second-line {
@@ -300,7 +305,6 @@ span{
             font-size: 0.9em;
     }
 }
-
 @media (max-width: 992px) {
     /* having intro text, both sentences show without line break */
     br { 
@@ -328,7 +332,6 @@ span{
         order: 1;
     }*/
 }
-
 @media (max-width: 768px) {
     /*image should show above text*/
     /*.apply-flex .portfolio-img-parent {
@@ -371,7 +374,21 @@ span{
     .js-header {
         text-align: center;
     }
-    .hero{
-        margin-top: 209px;
+    .header_bar > nav {
+        padding: 0;
     }
+    .hero{
+        margin-top: 186px;
+    }
+}
+@media (min-width: 412px) {
+    .roshni {
+        width: auto;
+        height: auto;
+    }
+}
+@media (max-width:172px) {
+    .hero{
+            margin-top: 216px;
+        }
 }
