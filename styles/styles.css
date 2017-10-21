@@ -91,7 +91,7 @@ body {
     font-size: 1.25em;
   }
 #intro {
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 #technologies h3 {
     padding: 0 20px;
@@ -280,17 +280,18 @@ span {
     /* getting intro text in hero image on screen sizes above 1030px */
     .intro-first-line, .intro-second-line {
             position: absolute;
-            left: 42px;
+            left: 36px;
             color: white;
             background-color: transparent;
-            text-shadow: 2px 2px 4px #000000;
+            text-shadow: 3px 3px 4px #000000;
+            font-weight: 600;
     }
     .intro-first-line {
-            top: 160px;
+            top: 125px;
             margin-bottom: 7px;
     }
     .intro-second-line {
-            top: 200px;
+            top: 165px;
     }
     .contact-list li{
             font-size: 0.9em;
