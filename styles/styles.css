@@ -204,7 +204,10 @@ span {
 .roshni {
     margin-top: 65px;
 }
-
+button.js-scroll-top, button.js-more-button {
+    font-size: unset;
+    width: 75px;
+}
 /* Flex order in full screen display would be default */
 /* with text on left and image on right*/
 .apply-flex{
