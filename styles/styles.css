@@ -214,6 +214,20 @@ button.js-scroll-top, button.js-more-button {
     display: flex;
     flex-wrap: wrap;
 }
+.centering-container>.contact-list>a {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#so {
+    width: 101px;
+    height: auto;
+    margin-left: 0;
+    padding-left: 0;    
+}
+#gh, #so {
+    margin-right: 0;
+    padding-right: 0;
+}
 /* CSS3 Animations */
     @keyframes changeLetter {
             0% {
@@ -388,6 +402,7 @@ button.js-scroll-top, button.js-more-button {
         height: auto;
     }
 }
+
 @media (max-width: 172px) {
     .hero{
             margin-top: 216px;
