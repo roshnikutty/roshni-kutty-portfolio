@@ -213,6 +213,8 @@ button.js-scroll-top, button.js-more-button {
 .apply-flex{
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
+    -webkit-flex: 1;
 }
 .centering-container>.contact-list>a {
     margin-left: 15px;
